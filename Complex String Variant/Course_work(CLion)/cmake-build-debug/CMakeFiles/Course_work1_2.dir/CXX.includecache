@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/ITMO/1st year/Programming/Course_work1-2/Base_String.h
+
+C:/ITMO/1st year/Programming/Course_work1-2/Complex_String.h
+Base_String.h
+C:/ITMO/1st year/Programming/Course_work1-2/Base_String.h
+
+C:/ITMO/1st year/Programming/Course_work1-2/String_ID.h
+Base_String.h
+C:/ITMO/1st year/Programming/Course_work1-2/Base_String.h
+
+C:/ITMO/1st year/Programming/Course_work1-2/main.cpp
+iostream
+-
+string.h
+-
+Base_String.h
+C:/ITMO/1st year/Programming/Course_work1-2/Base_String.h
+String_ID.h
+C:/ITMO/1st year/Programming/Course_work1-2/String_ID.h
+Complex_String.h
+C:/ITMO/1st year/Programming/Course_work1-2/Complex_String.h
+
