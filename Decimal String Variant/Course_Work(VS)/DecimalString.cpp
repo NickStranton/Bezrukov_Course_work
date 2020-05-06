@@ -33,7 +33,7 @@ DecimalString::DecimalString( char source)
 
 DecimalString::DecimalString(const char* source): Base_String(source)
 {
-	if ((char_pointer[0] < '0'&& char_pointer[0]>'9') && (char_pointer[0] != '-'&&char_pointer[0] != '+'))
+	if ((char_pointer[0] > '0'&& char_pointer[0]>'9') && (char_pointer[0] != '-'&&char_pointer[0] != '+'))
 	{
 		cout << "Bad symbol, pCh[0]= " << char_pointer[0] << endl;
 		if (char_pointer)
@@ -88,9 +88,9 @@ DecimalString operator+( const DecimalString&obj1, const DecimalString&obj2)
 	int num2 = atoi(obj2.GetStr());
 	int size;
 	if (obj1.string_length >= obj2.string_length)
-		size = obj1.string_length + 3;//выделение памяти, +3 на знаки и доп. символы
+		size = obj1.string_length + 3;//ГўГ»Г¤ГҐГ«ГҐГ­ГЁГҐ ГЇГ Г¬ГїГІГЁ, +3 Г­Г  Г§Г­Г ГЄГЁ ГЁ Г¤Г®ГЇ. Г±ГЁГ¬ГўГ®Г«Г»
 	else
-		size = obj2.string_length + 3; //выделение памяти, +3 на знаки и доп. символы
+		size = obj2.string_length + 3; //ГўГ»Г¤ГҐГ«ГҐГ­ГЁГҐ ГЇГ Г¬ГїГІГЁ, +3 Г­Г  Г§Г­Г ГЄГЁ ГЁ Г¤Г®ГЇ. Г±ГЁГ¬ГўГ®Г«Г»
 	char* pChTmp = new char[size];
 	_itoa_s((num1 + num2), pChTmp,size,10);
 	DecimalString tmp(pChTmp);
